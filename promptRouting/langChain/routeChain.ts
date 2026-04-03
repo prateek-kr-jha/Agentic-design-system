@@ -4,7 +4,7 @@ import { StringOutputParser } from "@langchain/core/output_parsers";
 import { RunnablePassthrough, RunnableBranch } from "@langchain/core/runnables";
 
 const llm = new ChatOllama({
-  model: "deepseek-v3.2:cloud", // 'rnj-1:8b '
+  model: "rnj-1:8b", // 'rnj-1:8b '
   temperature: 0,
 });
 
