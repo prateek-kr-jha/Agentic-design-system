@@ -1,0 +1,41 @@
+{
+  "name": "adk-ollama",
+  "version": "1.0.0",
+  "description": "Google ADK connector for Ollama - use Ollama models with Google's Agent Development Kit",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ollama",
+    "google-adk",
+    "adk",
+    "llm",
+    "ai",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@google/adk": ">=0.6.0",
+    "@google/genai": ">=1.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

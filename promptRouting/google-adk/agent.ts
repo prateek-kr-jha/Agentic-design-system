@@ -1,11 +1,11 @@
 import { LlmAgent, ParallelAgent, SequentialAgent } from "@google/adk";
-import { OllamaLlm } from "./ollama_llm.js";
+import { Ollama } from "adk-ollama";
 
 /**
  * Shared Ollama model instance.
  * The BaseLlm instance is stateless and safe to reuse across agents.
  */
-const model = new OllamaLlm({
+const model = new Ollama({
   model: "deepseek-v3.2:cloud",
   baseUrl: "http://localhost:11434",
 });
